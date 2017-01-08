@@ -22,14 +22,12 @@ export default class ShowCase extends Component{
            <DataTable.ColumnDef   colname="rate" colLabel="RATE" />
            <DataTable.ColumnDef   colname="amount" colLabel="AMOUNT" />
            <DataTable.ColumnDef   colname="tax" colLabel="TAX"/>
-           <DataTable.ColumnDef  hasAction={true}  render={
+           <DataTable.ColumnDef   hasAction={true}  render={
             (data,trigger)=>{
-            console.info('data trigger' ,data,trigger)
             return (<span>
             <i className="fa fa-trash-o"/>
             <i className="fa fa-pencil-square-o" onClick={
                  (e)=>{
-                 console.info('click',data);
                  if(trigger) trigger.apply(null,[data,'edit'])
                  }
             }/>
