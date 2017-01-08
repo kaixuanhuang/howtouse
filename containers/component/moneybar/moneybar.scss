@@ -1,0 +1,126 @@
+.cells{
+  display: inline-block;
+}
+
+.money-bar-cell {
+  &:hover {
+       top: -5px;
+       //height: 144px;
+       .money-bar-block {
+         border-bottom: 5px solid rgba(0, 0, 0, 0.1);
+      }
+  }
+
+  &.mbDarkBlue{
+    .money-bar-block{  background-color: #007DA9;}
+  }
+  &.mbLightBlue {
+    .money-bar-block {
+      background-color: #F2B835; }
+  }
+
+  &.mbOrange {
+    .money-bar-block {
+       background-color: #0098CD;
+    }
+  }
+  &.mbRed {
+    .money-bar-block {
+      background-color: #D93B42;
+    }
+  }
+  &.mbGreen {
+    .money-bar-block {
+      background-color: #56B349;
+    }
+  }
+ }
+
+.money-bar-text .secondary-text {
+    line-height: 13px;
+    text-transform: uppercase;
+    color: #486C8F;
+    display: block;
+    font-family: "HelveticaNeueRoman", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    margin: 0px;
+}
+
+
+
+.money-bar-cell {
+    position: relative;
+    height: 65px;
+    outline: none;
+    z-index: 1;
+    float: left;
+    -webkit-flex: 1 0 0px;
+    flex: 1 0 0px;
+    -ms-flex: 1 1 200px;
+    margin-top: 0px;
+
+    .money-bar-block {
+        height: 10px;
+        background-color: #007DA9;
+    }
+    .money-bar-text {
+      width: 100%;
+      position: relative;
+      height: 55px;
+      padding: 5px;
+
+    }
+
+}
+
+
+@media (min-width: 970px){
+
+  .money-bar-cell {
+     height: 134px;
+
+     &:hover {
+       .money-bar-block {
+           height: 55px;
+       }
+     }
+    .money-bar-block {
+        height: 45px;
+    }
+
+    .money-bar-text .secondary-text {
+        line-height: 14px;
+        font-size: 14px;
+        margin: 0px;
+    }
+
+    .money-bar-text {
+        height: 89px;
+        padding: 10px;
+    }
+  }
+}
+
+
+@media (min-width: 480px){
+  .money-bar-cell {
+      height: 90px;
+      &:hover {
+        .money-bar-block {
+            height: 30px;
+        }
+      }
+    .money-bar-block {
+        height: 25px;
+    }
+
+    .money-bar-text {
+        height: 65px;
+        padding: 10px;
+    }
+  }
+
+
+
+
+}

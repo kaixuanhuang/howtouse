@@ -1,0 +1,73 @@
+$quick-header-bgcolor:#E1EBF4;
+$quick-header-height:50px;
+$quick-action-square-height:$quick-header-height/1.5;
+$quick-action-square-padding: ($quick-header-height - $quick-header-height/1.5)/2;
+
+.quick-header{
+  position: relative;
+  background: $quick-header-bgcolor;
+  min-height: $quick-header-height;
+
+
+
+  .icon-group{
+    text-align: center;
+    line-height: $quick-header-height;
+  }
+
+  .action-square {
+    display:inline-block;
+    background: #496D8F;
+    cursor: pointer;
+    width:$quick-header-height;
+    height:$quick-header-height;
+    //add +按钮图标旋转为x
+    &:active,&:hover {
+      background:#284B6E!important;
+    }
+    &.action-create{
+      &:focus{
+           i{
+             transform: translate3d(0, 0, 0) rotate(-45deg);
+           }
+      }
+    }
+
+    &:not(:first-child){
+      border-left:1px solid #5D7D9D;
+    }
+
+
+    i{
+      font-size:$quick-action-square-height;
+      color:#FFFFFF;
+      // padding-top:$quick-action-square-padding;
+      // padding-left:$quick-action-square-padding;
+
+    }
+  }
+}
+
+.quick-header_menu {
+    position: absolute;
+    right:0;
+    height:$quick-header-height;
+   .menu-item {
+      border-left:1px  solid #C3D2E5;
+      line-height: $quick-header-height!important;
+      height:100%!important;
+      i{
+        font-size:$quick-header-height/2;
+      }
+
+      .setting-clips{
+        padding: 5px 10px;
+        border-radius: 5px;
+        background:#FEC82F;
+      }
+
+      span {
+        margin-left:10px;
+      }
+  }
+}

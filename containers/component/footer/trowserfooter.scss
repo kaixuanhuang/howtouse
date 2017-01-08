@@ -1,0 +1,29 @@
+$trowser-footer-height:50px;
+$trowser-footer-bgcolor:#496D8E;
+
+.trowser-footer{
+
+  position: fixed;
+  background: $trowser-footer-bgcolor;
+  min-height: $trowser-footer-height;
+  line-height:$trowser-footer-height;
+  width: 100%;
+  bottom: 0;
+}
+
+
+$drawer-footer-bg-color : #E3E9F1;
+$drawer-footer-height:$trowser-footer-height;
+
+.drawer-footer{
+  background:$drawer-footer-bg-color;
+  min-height: $drawer-footer-height;
+  line-height:$drawer-footer-height;
+
+  bottom: 0;
+  position:absolute;
+
+
+  width: 100%;
+  text-align: right;
+}

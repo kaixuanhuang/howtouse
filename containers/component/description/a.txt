@@ -1,0 +1,39 @@
+Activity Feed
+The Activity Feed is an event-based timeline meant to keep the user informed of activity within the application. The Activity Feed is grouped by days with the most recent activity at the top. Each event is tied to a source that caused the event to occur. Sources include transactions, users, and services.
+
+Created by Rebecca, Kylie, Joe and James Preston
+Last modified October 30, 2015 by Marni
+Carousel
+Carousels allow the user to browse a set of similar items. They can be used to reduce the amount of vertical space taken by a set of items, but should only be used in this manner when its content can be grouped into a coherent category.
+
+Created by James Preston
+Last modified July 31, 2015 by Dexx Dorris
+Insights
+Insights are visual charts or diagrams that typically appear in the Stage but can also appear inside Modules on the Dashboard.
+Money Bar
+Created by James Preston
+Last modified May 16, 2016 by Haidan
+Lists
+Harmony supports two basic List types: Basic Lists and Complex Lists.
+
+Basic Lists
+See the Pen Lists by Harmony Design (@harmonydesign) on CodePen.
+
+Created by James Preston
+Last modified May 16, 2016 by Haidan
+Media
+An Avatar is an image that represents a person or company. Clicking an avatar typically takes the user to the corresponding profile page. A placeholder avatar is used when an image has not been uploaded.
+
+Thumbnails can be used for images, videos, maps, and documents. Clicking an image or video thumbnail opens it in the Media Light Box.
+
+Created by James Preston
+Last modified July 21, 2015 by Haidan
+Stage
+The Stage is used to provide a high-level overview for the page and is always locked at the top of the page. It can include a heading, an Insight, and a minimal set of primary actions or controls.
+
+Created by Rebecca and James Preston
+Last modified November 11, 2015 by Haidan
+Tables
+Tables are structured grids of information that help users make sense of potentially large amounts of data.
+
+To allow a user to focus on their task at hand, tables consist of 3 modes: Default mode, Batch Action mode, and Edit mode.
